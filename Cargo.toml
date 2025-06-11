@@ -1,0 +1,21 @@
+[package]
+name = "pi_raw_slab"
+version = "0.1.0"
+authors = ["zmax <zmax@gaia.world>"]
+edition = "2021"
+description = "lock-free & auto-expansion raw slab"
+repository = "https://github.com/GaiaWorld/pi_arr.git"
+license = "MIT OR Apache-2.0"
+keywords = ["pi", "slab", "raw", "lock-free", "auto-expansion"]
+
+[dependencies]
+pi_share = "0.5"
+pi_vec_remain = "0.2"
+pi_buckets = "0.1"
+
+[features]
+rc = ["pi_share/rc"]
+
+[dev-dependencies]
+rand = "0.8"
+pcg_rand = "0.13"
